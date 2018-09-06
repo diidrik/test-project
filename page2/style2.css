@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font: 1em/1.5 'Poppins', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  //text-align: center;
+}
+/** Navbar burger styling ------------------------------------------------>**/
+
+#burger-container {
+  position: relative;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#burger {
+  cursor: pointer;
+  display: block;
+}
+
+#burger span {
+  background-color: #f4f4f4;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  position: relative;
+  top: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+#burger-container.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+#burger-container.open span:nth-child(3) {
+  transform: rotate(45deg);
+  top: -9px;
+}
+
+#burger-container.open span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+#slide-menu {
+  width: 0;
+}
+
+#slide-menu.open {
+  width: 100%;
+}
+
+/** navbar Class styling --------------------------------------------------> **/
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-nav {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+}
+
+.main-nav a,
+.name {
+  text-align: center;
+  z-index: 2;
+}
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+  padding-left: 5px;
+}
+
+.name a,
+.nav-list a {
+	padding: 10px 15px;
+  color: #f4f4f4;
+}
+
+.nav-list {
+	margin-top: 5px;
+  display: none;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: all ease-in-out 0.4s;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.side-nav input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 20px;
+  font-size: 17px;
+  transition: 0.3s;
+  z-index: 2;
+  opacity: 1;
+}
+
+.side-nav button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-left: -4.5px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 2
+  z-index: 1;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #fff;
+}
+/** End of navbar styles ----------------------------------------->**/
+/** class styling -------------------------------------------------->**/
+
+.wrapper {
+  padding-top: 63px;
+}
+
+.content-100 {
+  padding: 0 10%;
+}
+
+.selections {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.selections li {
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-bottom: auto;
+  border: solid 2px lightgrey;
+  border-radius: 10px;
+}
+
+.selections span {
+  padding-right: 10px;
+}
+
+.content-200 {
+ padding: 50px 10%;
+}
+
+.item {
+  display: flex;
+}
+
+.item img {
+  max-width: 100px;
+  height: auto;
+}
+
+.item-info {
+  display: block;
+}
+/** media q's ------------------------------------------------------->**/
+@media (min-width: 769px) {
+  .btn-menu {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+}

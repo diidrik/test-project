@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodle</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+  </head>
+  <body>
+
+    <div class="header">
+
+      <div class="main-nav">
+        <h1 class="name"><a href="#">Gymkompassen</a></h1>
+
+        <div id="burger-container" class="btn-menu">
+          <div id="burger">
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+          </div>
+        </div>
+
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+
+      <div id="slide-menu" class="side-nav">
+        <div class="search-bar">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+
+      <div class="banner">
+        <div id="intro" class="bg-intro">
+          <div class="intro-content">
+            <h1 class="title">Vill du komma ig&aring;ng med träningen?</h1>
+            <span>Vi j&auml;mf&ouml;r och sorterar<br>så att du hittar r&auml;tt gym för dig</span>
+            <div class="continue-button">
+              <a href="#first" id="btn" class="button">BÖRJA HÄR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <img src="https://apple.insidercdn.com/gallery/21413-24435-Screenshot_1-l.jpg" alt="ad" class="ad" id="first">
+
+    <div class="wrapper">
+
+      <div class="primary col">
+
+        <div class="guide">
+          <div class="location">
+            <img class="location-logo" src="img/city-logo.svg" alt="location-logo" height="100px" width="100px">
+            <p>Du väljer nedan vart du<br>bor eller önskar att träna.</p>
+          </div>
+
+          <div class="user">
+            <img class="user-logo" src="img\user1.png" alt="user-logo" height="100px" width="100px">
+            <p>Ange vilken av de olika rabatter<br>du tror stämmer in på dig. </p>
+          </div>
+
+          <div class="dumbell">
+            <img class="dumbell-logo" src="img/dumbell1.png" alt="dumbell logo" height="100px" width="100px">
+            <p>Tryck dig vidare och hitta<br>rätt anläggning för dig.</p>
+          </div>
+        </div>
+
+          <div class="arrow">
+            <img class="arrow-img" src="img\arrow2.png" alt="pil-ner">
+          </div>
+
+      </div>
+
+      <div class="secondary col">
+        <div class="choose">
+          <form action="index.html" method="post">
+            <div class="">
+              <span class="instruction-100">Välj din stad/ort</span>
+              <select class="select-city" name="city">
+                <option value="stockholm">Stockholm</option>
+                <option value="goteborg">Göteborg</option>
+                <option value="malmo">Malmö</option>
+              </select>
+            </div>
+
+            <hr>
+
+            <div class="">
+              <span class="instruction-100">Rabatter</span>
+              <select class="select-discount" name="discount">
+                <option value="ungdom">Ungdom (20 och under)</option>
+                <option value="student">Student</option>
+                <option value="senior">Senior (65 och äldre)</option>
+                <option value="Ordinarie">Ordinarie priser</option>
+              </select>
+            </div>
+
+            <hr>
+
+            <div class="find">
+              <input type="button" class="button" name="submit-btn" value="SÖK">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+      <footer class="main-footer">
+        <div class="social-media">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/maxplanstedt/?hl=en"><img src="img/instaicon.png" alt="Instagram"></a>
+          <a href="#first"><img src="img/fbicon.png" alt="Facebook"></a>
+          <a href="#top"><img src="img/yticon.png" alt="Youtube"></a>
+        </div>
+      </footer>
+
+  </body>
+</html>
