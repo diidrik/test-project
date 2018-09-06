@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 form {
   //max-width: 500px;
   margin: 0;
@@ -113,7 +117,8 @@ select {
   padding-left: 5px;
 }
 
-.name a {
+.name a,
+.nav-list a {
 	padding: 10px 15px;
   color: #f4f4f4;
 }
@@ -282,6 +287,14 @@ select {
 
 
 @media (min-width: 769px) {
+
+  .btn-menu {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
 
   .intro-content {
     font-size: 1.625em;
